@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
+	content: [
+		// reference the library only
+		"./lib/**/*.{js,ts,jsx,tsx}",
+	],
+	theme: {
+		extend: {},
+	},
+	plugins: [],
+};

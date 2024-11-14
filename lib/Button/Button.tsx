@@ -1,7 +1,9 @@
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({ children, ...props }: ButtonProps) => (
-	<button {...props}>{children}</button>
+	<button className="bg-red-700" {...props}>
+		{children}
+	</button>
 );
 
 Button.displayName = "Button";
