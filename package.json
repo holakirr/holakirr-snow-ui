@@ -9,7 +9,8 @@
 	"exports": {
 		".": {
 			"import": "./dist/holakirr-snow-ui.js",
-			"require": "./dist/holakirr-snow-ui.umd.cjs"
+			"require": "./dist/holakirr-snow-ui.umd.cjs",
+			"types": "./dist/main.d.ts"
 		},
 		"./style.css": "./dist/style.css"
 	},
