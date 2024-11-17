@@ -11,6 +11,7 @@ export default defineConfig({
 		tsconfigPaths(),
 		dts({
 			rollupTypes: true,
+			include: ["lib"],
 		}),
 	],
 	build: {
