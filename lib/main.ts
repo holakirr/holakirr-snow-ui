@@ -1,2 +1,2 @@
-export * from "./Components";
-import "./tailwind.css";
+export * from './Components'
+import './tailwind.css'

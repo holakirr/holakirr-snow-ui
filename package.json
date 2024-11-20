@@ -19,19 +19,23 @@
 		"dev": "vite",
 		"prebuild": "rm -rf dist",
 		"build": "tsc -b && vite build",
-		"lint": "eslint .",
 		"preview": "vite preview",
 		"prepublishOnly": "bun run build",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"test": "vitest",
-		"coverage": "vitest run --coverage"
+		"coverage": "vitest run --coverage",
+		"lint": "biome lint",
+		"format": "biome format",
+		"lint:fix": "biome format --fix",
+		"format:fix": "biome format --fix"
 	},
 	"dependencies": {
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
 		"@chromatic-com/storybook": "^3.2.2",
 		"@eslint/js": "^9.15.0",
 		"@storybook/addon-essentials": "^8.4.4",

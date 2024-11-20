@@ -1,9 +1,9 @@
-import { render } from "@testing-library/react";
-import { Button } from "./";
+import { render } from '@testing-library/react'
+import { Button } from './'
 
 describe(`Component: ${Button.name}`, () => {
-	it("should render", () => {
-		const { container } = render(<Button>Button</Button>);
+	it('should render', () => {
+		const { container } = render(<Button>Button</Button>)
 
 		expect(container).toMatchInlineSnapshot(`
 			<div>
@@ -13,6 +13,6 @@ describe(`Component: ${Button.name}`, () => {
 			    Button
 			  </button>
 			</div>
-		`);
-	});
-});
+		`)
+	})
+})
