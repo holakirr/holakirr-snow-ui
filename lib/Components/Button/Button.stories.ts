@@ -1,22 +1,17 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
-import { Button } from "./Button";
+import { Button } from "./";
 
 const meta: Meta<typeof Button> = {
+	title: "Button",
 	component: Button,
 };
+
 export default meta;
 
 type Story = StoryObj<typeof Button>;
 
 export const Default: Story = {
 	args: {
-		children: "Hey",
-	},
-};
-
-export const Emoji: Story = {
-	args: {
-		children: "😍",
+		children: "Button",
 	},
 };

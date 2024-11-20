@@ -2,9 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 
-createRoot(
-	document.getElementById("root") || document.createElement("div"),
-).render(
+createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<App />
 	</StrictMode>,
